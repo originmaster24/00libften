@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 21:04:36 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/12 21:27:48 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/12 21:49:54 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	buff[i] = psrc[i];
 	i = -1;
 	while (++i < n)
-	{
 		pdst[i] = buff[i];
-	}
 	free(buff);
 	return (pdst);
 }
@@ -83,4 +81,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	printf("str2 %s\n\n",str2);
 
 //-----------------------------------
+	
 }*/

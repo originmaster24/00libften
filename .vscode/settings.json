@@ -1,3 +1,7 @@
 {
-    "42header.username": "zzhu"
+    "42header.username": "zzhu",
+    "files.associations": {
+        "unistd.h": "c",
+        "stdlib.h": "c"
+    }
 }
