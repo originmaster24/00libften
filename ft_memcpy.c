@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 13:25:10 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/12 17:23:03 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/12 19:59:58 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int	overlap(void *a, size_t a_size, void *b, size_t b_size)
+static int	overlap(void *a, size_t a_size, void *b, size_t b_size)
 {
 	char	*a_start;
 	char	*a_end;
