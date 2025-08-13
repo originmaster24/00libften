@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/13 14:41:09 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/13 15:37:46 by zzhu             ###   ########.fr       */
+/*   Created: 2025/08/13 15:24:45 by zzhu              #+#    #+#             */
+/*   Updated: 2025/08/13 15:51:07 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,36 +25,42 @@ static size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
-	char	*ptrdst;
 	char	*ptrsrc;
 	size_t	i;
+	size_t	b;
+	size_t	dstlen;
 
-	ptrdst = dst;
+	dstlen = ft_strlen(dst);
+	dst = dst;
 	ptrsrc = (char *)src;
 	i = 0;
-	while (src[i] && i + 1 < dsize)
-	{
-		ptrdst[i] = src[i];
+	b = 0;
+	while (dst[i])
 		i++;
+	while (src[b] && i + 1 < dsize)
+	{
+		dst[i++] = src[b++];
 	}
 	while (i < dsize)
 	{
-		ptrdst[i] = '\0';
+		dst[i] = '\0';
 		i++;
 	}
-	return (ft_strlen(ptrsrc));
+	return (dstlen + ft_strlen(ptrsrc));
 }
 
 // int main(void)
 // {
 // 	char	*src = "helloworld";
-// 	char	dest[20];
+// 	char	dest[20] = "nice";
+// 	char	dest1[20] = "nice";	
 // 	int		i;
 
-// 	i = ft_strlcpy(dest, src, 5);
+// 	i = ft_strlcat(dest, src, 20);
 // 	printf("src '%s' dest '%s' i '%d'\n", src, dest, i);
-// 	i = strlcpy(dest, src, 5);
-// 	printf("src '%s' dest '%s' i '%d'\n", src, dest, i);
+
+// 	i = strlcat(dest1, src, 20);
+// 	printf("src '%s' dest '%s' i '%d'\n", src, dest1, i);
 // }
