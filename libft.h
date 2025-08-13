@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 16:39:07 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/13 16:55:46 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/13 17:49:08 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
-
-
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
@@ -31,5 +29,7 @@ char	*ft_strdup(const char *s);
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
 size_t	ft_strlen(const char *s);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_strrchr(const char *s, int c);
 
 #endif
