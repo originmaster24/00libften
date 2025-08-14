@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:52:09 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 19:55:09 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/14 20:39:15 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 // 	printf("str1: %s str2: %s %d\n", str1, str2, ft_strncmp(str1, str2, i));
 // 	printf("str1: %s str2: %s %d\n", str1, str2, strncmp(str1, str2, i));
-	
+
 // 	str1 = "ABC";
 // 	str2 = "AB";
 
@@ -44,7 +44,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 // 	str1 = "ABC";
 // 	str2 = "ABZ";
-	
+
 // 	printf("str1: %s str2: %s %d\n", str1, str2, ft_strncmp(str1, str2, i));
 // 	printf("str1: %s str2: %s %d\n", str1, str2, strncmp(str1, str2, i));
 
