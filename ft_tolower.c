@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:27:36 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 21:31:46 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/14 21:32:29 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
 	return (c);
 }
 
@@ -29,13 +29,13 @@ int	ft_toupper(int c)
 // 	str = "Hello world";
 
 // 	for (int i = 0; str[i]; i++)
-// 		printf("%c", ft_toupper(str[i]));
+// 		printf("%c", ft_tolower(str[i]));
 // 	printf("\n");
 
-// 	str = "1world";
+// 	str = "1woRld";
 
 // 	for (int i = 0; str[i]; i++)
-// 		printf("%c", ft_toupper(str[i]));
+// 		printf("%c", ft_tolower(str[i]));
 // 	printf("\n");
 
 // }

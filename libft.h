@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 16:39:07 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 21:28:15 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/14 21:32:50 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif
