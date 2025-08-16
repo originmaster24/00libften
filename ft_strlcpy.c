@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 14:41:09 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/13 15:37:46 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 22:46:24 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,28 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
 		ptrdst[i] = src[i];
 		i++;
 	}
-	while (i < dsize)
-	{
+	if (dsize != 0)
 		ptrdst[i] = '\0';
-		i++;
-	}
 	return (ft_strlen(ptrsrc));
 }
+
+// size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
+// {
+// 	char	*ptrdst;
+// 	char	*ptrsrc;
+// 	size_t	i;
+
+// 	ptrdst = dst;
+// 	ptrsrc = (char *)src;
+// 	i = 0;
+// 	while (src[i] && i + 1 < dsize)
+// 	{
+// 		ptrdst[i] = src[i];
+// 		i++;
+// 	}
+// 	ptrdst[i] = '\0';
+// 	return (ft_strlen(ptrsrc));
+// }
 
 // int main(void)
 // {
@@ -53,8 +68,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
 // 	char	dest[20];
 // 	int		i;
 
-// 	i = ft_strlcpy(dest, src, 5);
+// 	i = ft_strlcpy(dest, "lorem ipsum dolor sit amet", 0);
 // 	printf("src '%s' dest '%s' i '%d'\n", src, dest, i);
-// 	i = strlcpy(dest, src, 5);
+// 	i = strlcpy(dest, "lorem ipsum dolor sit amet", 0);
 // 	printf("src '%s' dest '%s' i '%d'\n", src, dest, i);
 // }
