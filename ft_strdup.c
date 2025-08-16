@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 15:12:46 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/12 15:43:46 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 15:37:20 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,12 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	while (s[i])
 		i++;
-	printf("dup size %d\n", i);
 	buf = (char *)malloc(sizeof(char) * i);
 	if (!(buf))
 		return (NULL);
 	i = -1;
 	while (s[++i])
 		buf[i] = s[i];
-	printf("dup size %d\n", i);
 	buf[i] = s[i];
 	return (buf);
 }
