@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:05:28 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/13 17:46:08 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 23:56:42 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,58 +17,52 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	char	*iterbig;
-	char	*ptrlittle;
-	char	*ptrbig;
+	size_t	b;
+	size_t	l;
 	size_t	i;
 
-	i = -1;
-	ptrbig = (char *)big;
+	b = -1;
 	if (little == (const char *)"")
-		return (ptrbig);
-	while (++i < len && *ptrbig)
+		return ((char *)big);
+	while (++b + 1 < len && big[b])
 	{
-		ptrlittle = (char *)little;
-		iterbig = ptrbig;
-		while (*ptrlittle == *iterbig && *ptrlittle != '\0')
+		l = 0;
+		i = b;
+		while (little[l] == big[i] && little[l] != '\0' && i < len)
 		{
-			ptrlittle++;
-			iterbig++;
+			l++;
+			i++;
 		}
-		if (*ptrlittle == '\0')
-			return (ptrbig);
-		ptrbig++;
+		if (little[l] == '\0')
+			return ((char *)big + b);
+		b++;
 	}
-	if (*ptrlittle == '\0')
-		return (ptrbig);
 	return (NULL);
 }
-/* 
-int main(void)
-{
-	char big[] = "helloworld!";
-	char *little = "wor";
-	int size = 12;
-	char *ptrtest1 = ft_strnstr(big, little, size);
-	char *ptrtest2 = strnstr(big, little, size);
-	printf("%s, %p\n", ptrtest1, ptrtest1);
-	printf("%s, %p\n", ptrtest2, ptrtest2);
 
-	little = "a";
-	ptrtest1 = ft_strnstr(big, little, size);
-	ptrtest2 = strnstr(big, little, size);
-	printf("%s, %p\n", ptrtest1, ptrtest1);
-	printf("%s, %p\n", ptrtest2, ptrtest2);
+// int main(void)
+// {
 
-	little = "h";
-	ptrtest1 = ft_strnstr(big, little, size);
-	ptrtest2 = strnstr(big, little, size);
-	printf("%s, %p\n", ptrtest1, ptrtest1);
-	printf("%s, %p\n", ptrtest2, ptrtest2);
+// 	char *ptrtest1 = ft_strnstr("lorem ipsum dolor sit amet", "lorem", 15);
+// 	char *ptrtest2 = strnstr("lorem ipsum dolor sit amet", "lorem", 15);
+// 	printf("%s, %p\n", ptrtest1, ptrtest1);
+// 	printf("%s, %p\n", ptrtest2, ptrtest2);
 
-	little = "ll";
-	ptrtest1 = ft_strnstr(big, little, size);
-	ptrtest2 = strnstr(big, little, size);
-	printf("%s, %p\n", ptrtest1, ptrtest1);
-	printf("%s, %p\n", ptrtest2, ptrtest2);
-} */
+// 	// little = "a";	
+// 	// ptrtest1 = ft_strnstr(big, little, size);
+// 	// ptrtest2 = strnstr(big, little, size);
+// 	// printf("%s, %p\n", ptrtest1, ptrtest1);
+// 	// printf("%s, %p\n", ptrtest2, ptrtest2);
+
+// 	// little = "h";
+// 	// ptrtest1 = ft_strnstr(big, little, size);
+// 	// ptrtest2 = strnstr(big, little, size);
+// 	// printf("%s, %p\n", ptrtest1, ptrtest1);
+// 	// printf("%s, %p\n", ptrtest2, ptrtest2);
+
+// 	// little = "ll";
+// 	// ptrtest1 = ft_strnstr(big, little, size);
+// 	// ptrtest2 = strnstr(big, little, size);
+// 	// printf("%s, %p\n", ptrtest1, ptrtest1);
+// 	// printf("%s, %p\n", ptrtest2, ptrtest2);
+// }
