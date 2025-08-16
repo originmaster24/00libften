@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 19:57:41 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 20:40:02 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 12:37:06 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <bsd/string.h>
+#include "libft.h"
+
+int	ft_atoi(const char *nptr);
 
 static int	cases(const char c)
 {
