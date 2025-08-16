@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:52:09 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 20:39:15 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 23:18:09 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,20 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*ss1;
+	unsigned char	*ss2;
 
+	ss1 = (unsigned char *)s1;
+	ss2 = (unsigned char *)s2;
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] && i < n)
+	if (n == 0)
+		return (0);
+	while (ss1[i] == ss2[i] && ss1[i] && i + 1 < n)
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (ss1[i] - ss2[i]);
 }
 
 // int main(void)
@@ -54,4 +60,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	printf("str1: %s str2: %s %d\n", str1, str2, ft_strncmp(str1, str2, i));
 // 	printf("str1: %s str2: %s %d\n", str1, str2, strncmp(str1, str2, i));
 
+// 	str1 = "\201";
+// 	str2 = "A";
+
+// 	printf("str1: %s str2: %s %d\n", str1, str2, ft_strncmp(str1, str2, i));
+// 	printf("str1: %s str2: %s %d\n", str1, str2, strncmp(str1, str2, i));
 // }
