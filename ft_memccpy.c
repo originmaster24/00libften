@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 19:52:49 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/16 14:41:22 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 15:31:23 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,51 +44,51 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	{
 		ptrdest[i] = ptrsrc[i];
 		if (ptrsrc[i] == c)
-			return (ptrsrc + ++i);
+			return (ptrdest + ++i);
 		i++;
 	}
 	return (NULL);
 }
 
-/* int	main(void)
-{
-	char str1[]="helloworld!";
-	char str2[20];
-	char str3[20];
-	char str4[20];
-	char *ptr1;
-	char *ptr2;
-	char *ptr3;
-	char *ptr4;
-	
-	char ostr2[20];
-	char ostr3[20];
-	char ostr4[20];
-	//char *optr1; see ln76
-	char *optr2;
-	char *optr3;
-	char *optr4;
-	
-	ptr1 = ft_memccpy(str1, str1, 'l', 10); //overlap
-	ptr2 = ft_memccpy(str2, str1, 'd', 12);
-	ptr3 = ft_memccpy(str3, str1, 'l', 0);
-	ptr4 = ft_memccpy(str4, str1, 'l', 5);
-	
-	//optr1 = memccpy(str1, str1, 'l', 10); //overlap not working because
-											//original restrict
-	optr2 = memccpy(ostr2, str1, 'd', 12);
-	optr3 = memccpy(ostr3, str1, 'l', 0);
-	optr4 = memccpy(ostr4, str1, 'l', 5);
+//  int	main(void)
+// {
+// 	char str1[]="zyxwvutsrqponmlkjihgfedcba";
+// 	char str2[20];
+// 	char str3[20];
+// 	char str4[20];
+// 	//char *ptr1;
+// 	char *ptr2;
+// 	char *ptr3;
+// 	char *ptr4;
 
-	printf("str1 %s, %p\n\n", str1, str1);
+// 	//char ostr2[20];
+// 	char ostr3[20];
+// 	char ostr4[20];
+// 	//char *optr1; see ln76
+// 	char *optr2;
+// 	char *optr3;
+// 	char *optr4;
 
-	printf("str1 %s, ptr1 %p\n", str1, ptr1);
-	printf("str2 %s, ptr2 %p\n", str2, ptr2);
-	printf("str3 %s, ptr3 %p\n", str3, ptr3);
-	printf("str4 %s, ptr4 %p\n\n", str4, ptr4);
+// 	//ptr1 = ft_memccpy(str1, str1, 'l', 10); //overlap
+// 	ptr2 = ft_memccpy(str2, "zyxwvutsrqponmlkjihgfedcba", 'r', 20);
+// 	ptr3 = ft_memccpy(str3, str1, 'l', 0);
+// 	ptr4 = ft_memccpy(str4, str1, 'l', 5);
 
-	//printf("optr1 %s, %p\n", optr1, optr1); commented cause ln76
-	printf("ostr2 %s, optr2 %p\n", ostr2, optr2);
-	printf("ostr3 %s, optr3 %p\n", ostr3, optr3);
-	printf("ostr4 %s, optr4 %p\n", ostr4, optr4);
-} */
+// 	printf("str1 %s, %p\n\n", str1, str1);
+
+// 	//printf("str1 %s, ptr1 %p\n", str1, ptr1);
+// 	printf("str2 %s, ptr2 %p\n", str2, ptr2);
+// 	printf("str3 %s, ptr3 %p\n", str3, ptr3);
+// 	printf("str4 %s, ptr4 %p\n\n", str4, ptr4);
+
+// 	//optr1 = memccpy(str1, str1, 'l', 10); //overlap not working because
+// 											//original restrict
+// 	optr2 = memccpy(str2, "zyxwvutsrqponmlkjihgfedcba", 'r', 20);
+// 	optr3 = memccpy(ostr3, str1, 'l', 0);
+// 	optr4 = memccpy(ostr4, str1, 'l', 5);
+
+// 	//printf("optr1 %s, %p\n", optr1, optr1); commented cause ln76
+// 	printf("str2 %s, optr2 %p\n", str2, optr2);
+// 	printf("ostr3 %s, optr3 %p\n", ostr3, optr3);
+// 	printf("ostr4 %s, optr4 %p\n", ostr4, optr4);
+// }
