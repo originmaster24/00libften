@@ -6,14 +6,10 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 19:57:41 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/16 14:38:27 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/16 20:08:19 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <bsd/string.h>
 #include "libft.h"
 
 int	ft_atoi(const char *nptr);
