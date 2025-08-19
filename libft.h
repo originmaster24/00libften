@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 16:39:07 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/19 23:16:57 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 23:25:39 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
