@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:27:36 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 21:32:29 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:58:31 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

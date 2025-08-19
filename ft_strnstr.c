@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 17:05:28 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/16 23:56:42 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:58:17 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <bsd/string.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

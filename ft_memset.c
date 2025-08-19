@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 20:50:47 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/12 21:39:42 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:57:21 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int c, size_t n)
 {

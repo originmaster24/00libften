@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 12:48:28 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/13 14:29:56 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:57:09 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 static int	ft_strsize(unsigned char *str1)
 {

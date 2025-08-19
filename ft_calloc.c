@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 22:45:01 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 22:45:44 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 23:03:03 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 19:52:49 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/16 15:31:23 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:56:57 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 static int	overlap(void *a, size_t a_size, void *b, size_t b_size)
 {

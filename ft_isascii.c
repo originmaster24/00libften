@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 20:44:54 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/14 21:07:10 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:56:18 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <bsd/string.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -6,14 +6,11 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 15:12:46 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/16 15:37:20 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 22:57:31 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

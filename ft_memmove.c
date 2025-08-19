@@ -6,25 +6,22 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 21:04:36 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/16 16:03:40 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/19 23:15:24 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-static void	zerostr(char *str, size_t size)
-{
-	int	i;
+// static void	zerostr(char *str, size_t size)
+// {
+// 	int	i;
 
-	i = -1;
-	while (++i < size)
-	{
-		str[i] = '\0';
-	}
-}
+// 	i = -1;
+// 	while (++i < (int)size)
+// 	{
+// 		str[i] = '\0';
+// 	}
+// }
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -39,7 +36,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	while (psrc[i])
 		i++;
 	buff = (char *)malloc(sizeof(char) * ++i);
-	zerostr(buff, i);
+	ft_bzero(buff, i);
 	i = -1;
 	while (++i < n)
 		buff[i] = psrc[i];
