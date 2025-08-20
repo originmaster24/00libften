@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/20 18:07:53 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/20 18:45:32 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/20 19:04:01 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	output = (char *)malloc(sizeof(char) * (end - start + 1));
 	if (!output)
 		return (NULL);
-	ft_bzero(output, (end - start + 2));
+	ft_bzero(output, (end - start + 1));
 	if (end - start + 1 == 1)
 		return (output);
 	while (start <= end)
