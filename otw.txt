@@ -8,4 +8,6 @@ bandit6 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG cat $(find / -user bandit7 -group bandi
 bandit7 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj grep millionth $(find /home/bandit7/ -name data.txt )
 bandit8 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc sort data.txt | uniq -u (or use uniq -c and find the one)
 bandit9 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM strings data.txt | grep -E "=+" | sed 's/^=* *//'
-bandit10 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+bandit10 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey base64 -d data.txt
+bandit11 dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt 
+bandit12 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
