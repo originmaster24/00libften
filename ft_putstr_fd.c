@@ -6,7 +6,7 @@
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 22:11:34 by zzhu              #+#    #+#             */
-/*   Updated: 2025/08/29 22:21:18 by zzhu             ###   ########.fr       */
+/*   Updated: 2025/08/29 22:24:09 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
 	i = -1;
-	while (++i < ft_strlen(s))
+	while ((size_t)++i < ft_strlen(s))
 		write(fd, &s[i], 1);
 }
 
