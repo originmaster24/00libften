@@ -11,4 +11,6 @@ bandit9 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM strings data.txt | grep -E "=+" | sed '
 bandit10 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey base64 -d data.txt
 bandit11 dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt 
 bandit12 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 cd $(mktemp -d) && cp ~/data.txt ./ && xxd -r data.txt > data.bin && file data.bin && mv data.bin data.gz && gunzip data.gz && file data && mv data data.bz2 && bunzip data.bz2 && mv data data.gz && zcat data.gz > data.tar && tar -xf data1.tar && tar -xf data5.tar && mv data6.bin data6.tar && mv data8.bin data8.bz && gunzip data8.gz -k && cat data8
-bandit13 FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+bandit13 FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn ssh -i sshkey.private bandit14@localhost cat /etc/bandit_pass/bandit14
+bandit14 MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS echo 'MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS' | nc localhost 30000
+bandit15 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo

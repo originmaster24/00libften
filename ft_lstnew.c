@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zzhu <zzhu@student.42firenze.it>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 21:44:01 by zzhu              #+#    #+#             */
-/*   Updated: 2025/09/06 21:01:57 by zzhu             ###   ########.fr       */
+/*   Created: 2025/09/06 21:02:27 by zzhu              #+#    #+#             */
+/*   Updated: 2025/09/06 21:05:54 by zzhu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+t_list	*ft_lstnew(void *content)
 {
-	unsigned char	*ptrsrc;
-	unsigned char	match;
-	size_t			i;
+	t_list	*new_ptr;
 
-	ptrsrc = (unsigned char *)s;
-	match = (unsigned char) c;
-	i = -1;
-	while (++i < n)
-	{
-		if (ptrsrc[i] == match)
-			return (ptrsrc + i);
-	}
-	return (NULL);
+	new_ptr = (t_list *)malloc(sizeof(t_list));
+	if (!new_ptr)
+		return (NULL);
+	new_ptr->content = content;
+	new_ptr->next = NULL;
+	return (new_ptr);
 }
 
-// int main()
+// int main(void)
 // {
 // 	char str[] = "helloworld!";
 // 	char letter = 'w';
